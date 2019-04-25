@@ -1,3 +1,6 @@
+.hidden {
+  display: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,15 +135,13 @@ table {
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
-.main-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+* {
+  box-sizing: border-box;
 }
-.main-nav a {
+.desktop-main-nav {
+  display: none;
+}
+.desktop-main-nav a {
   width: 100%;
   padding: 10px;
   border-top: 1px solid #55596d;
@@ -150,15 +151,42 @@ table {
   font-size: 1.6rem;
 }
 @media (min-width: 1000px) {
-  .main-nav a {
+  .desktop-main-nav a {
     border-top: none;
   }
 }
 @media (min-width: 1000px) {
-  .main-nav {
-    flex-direction: row;
-    margin-top: 0;
+  .desktop-main-nav {
     width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+.mobile-main-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.mobile-main-nav a {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #55596d;
+  text-decoration: none;
+  text-align: center;
+  color: #55596d;
+  font-size: 1.6rem;
+}
+.mobile-main-nav a:last-child {
+  border-bottom: 1px solid #55596d;
+}
+@media (min-width: 1000px) {
+  .mobile-main-nav {
+    display: none;
   }
 }
 .container {
@@ -194,5 +222,60 @@ table {
     padding: 0;
     justify-content: space-between;
     padding: 40px 60px;
+    border-bottom: 2px solid #55596d;
+  }
+}
+.container .home-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container .home-main .main-content-section {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .home-main .main-content-section h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.container .home-main .main-content-section p {
+  font-size: 1.2rem;
+}
+.container .home-main .main-content-section .get-help-img {
+  width: 200px;
+}
+.container .home-main .main-content-section .keep-organized-img {
+  width: 200px;
+}
+.container .home-main .primary {
+  background: #bb1333;
+  color: white;
+}
+.container .home-main .secondary {
+  background: #002070;
+  color: white;
+}
+.container .home-main .tertiary {
+  background: #1e50ee;
+  color: white;
+}
+.container .home-main .quarternary {
+  background: #08addd;
+  color: white;
+}
+.container .home-main .full-width {
+  width: 100%;
+}
+.container .home-main .half-width {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .container .home-main .half-width {
+    width: 50%;
   }
 }

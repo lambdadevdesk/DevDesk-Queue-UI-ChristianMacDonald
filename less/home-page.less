@@ -17,7 +17,6 @@
             }
         }
 
-
         .logo {
             width: 200px;
             margin-top: 30px;
@@ -31,6 +30,72 @@
             padding: 0;
             justify-content: space-between;
             padding: 40px 60px;
+            border-bottom: 2px solid @lambda-gray;
+        }
+    }
+
+    .home-main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .main-content-section {
+            padding: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 2.4rem;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .get-help-img {
+                width: 200px;
+            }
+
+            .keep-organized-img {
+                width: 200px;
+            }
+        }
+
+        .primary {
+            background: @lambda-red;
+            color: white;
+        }
+
+        .secondary {
+            background: @lambda-dark-blue;
+            color: white;
+        }
+
+        .tertiary {
+            background: @lambda-blue;
+            color: white;
+        }
+
+        .quarternary {
+            background: @lambda-light-blue;
+            color: white;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        .half-width {
+            width: 100%;
+
+            @media @desktop {
+                width: 50%;
+            }
         }
     }
 }

@@ -1,24 +1,72 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<title>DevDesk Queue</title>
-		<meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/index.css" />
-	</head>
-	<body>
-        <div class="container">
-            <div class="top-bar">
-                <img src="./img/Hamburger_icon.png" alt="Hamburger Icon" class="hamburger-button" />
-                <img class="logo" src="./img/Lambda_Logo.png" alt="Lambda Logo" />
-                <nav class="main-nav">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Register</a>
-                    <a href="#">Log In</a>
-                </nav>
-            </div>
-            <hr />
+<head>
+    <title>Dev Desk Queue</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <img src="./img/Hamburger_Icon.png" alt="Hamburger Icon" class="hamburger-button" />
+            <img class="logo" src="./img/Lambda_Logo.png" alt="Lambda Logo" />
+            <nav class="desktop-main-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Register</a>
+                <a href="#">Log In</a>
+            </nav>
+            <nav class="mobile-main-nav">
+                <a href="#" class="hidden">Home</a>
+                <a href="#" class="hidden">About</a>
+                <a href="#" class="hidden">Register</a>
+                <a href="#" class="hidden">Log In</a>
+            </nav>
         </div>
-	</body>
+        <main class="home-main">
+            <section class="main-content-section primary half-width">
+                <h2>Welcome to Dev Desk Queue</h2>
+                <p>
+                    Et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam
+                    nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis
+                    nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt
+                    nunc pellentesque eleifend vulputate lacus, vel semper sem ornare sit amet proin sem sapien,
+                    auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna
+                    viverra sed nullam mi arcu, tempor vitae interdum a, sodales non urna vestibulum dignissim.
+                </p>
+            </section>
+            <section class="main-content-section secondary half-width">
+                <img class="get-help-img" src="./img/Get_Help.jpeg" alt="Circle of Hands" />
+                <h2>Get Help</h2>
+                <p>
+                    Velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt,
+                    turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci
+                    praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam
+                    hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla vel dapibus a, blandit
+                    quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris
+                    id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget
+                    consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis
+                    nec in hac habitasse platea dictumst.
+                </p>
+            </section>
+            <section class="main-content-section tertiary full-width">
+                <img class="keep-organized-img" src="./img/Keep_Organized.jpeg" alt="Flow Chart" />
+                <h2>Keep Organized</h2>
+                <p>
+                    Laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis
+                    eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue
+                    cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna
+                    felis fusce vestibulum.
+                </p>
+            </section>
+            <section class="main-content-section quarternary full-width">
+                <h2>Keep In Touch</h2>
+                <input type="text" name="email" value="" />
+                <button>Sign Up</button>
+            </section>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
 </html>
