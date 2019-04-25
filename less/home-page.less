@@ -1,0 +1,25 @@
+.container {
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 60px;
+
+        .home-header {
+            width: 200px;
+
+            .logo {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media @desktop {
+            flex-direction: row;
+        }
+    }
+}

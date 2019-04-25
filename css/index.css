@@ -126,3 +126,49 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #55596d;
+  font-size: 1.6rem;
+}
+@media (min-width: 1000px) {
+  .main-nav {
+    margin-top: 0;
+    width: 50%;
+  }
+}
+.container {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+.container .top-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+.container .top-bar .home-header {
+  width: 200px;
+}
+.container .top-bar .home-header .logo {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1000px) {
+  .container .top-bar {
+    flex-direction: row;
+  }
+}
