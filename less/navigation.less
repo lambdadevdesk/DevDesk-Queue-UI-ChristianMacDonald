@@ -4,15 +4,19 @@
     a {
         width: 100%;
         padding: 10px;
-        border-top: 1px solid @lambda-gray;
         text-decoration: none;
         text-align: center;
         color: @lambda-gray;
         font-size: 1.6rem;
+    }
 
-        @media @desktop {
-            border-top: none;
-        }
+    @media @tablet {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
     }
 
     @media @desktop {
@@ -44,6 +48,10 @@
         &:last-child {
             border-bottom: 1px solid @lambda-gray;
         }
+    }
+
+    @media @tablet {
+        display: none;
     }
 
     @media @desktop {

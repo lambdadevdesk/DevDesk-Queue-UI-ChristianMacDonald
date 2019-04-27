@@ -144,15 +144,19 @@ table {
 .desktop-main-nav a {
   width: 100%;
   padding: 10px;
-  border-top: 1px solid #55596d;
   text-decoration: none;
   text-align: center;
   color: #55596d;
   font-size: 1.6rem;
 }
-@media (min-width: 1000px) {
-  .desktop-main-nav a {
-    border-top: none;
+@media (min-width: 800px) {
+  .desktop-main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1000px) {
@@ -184,10 +188,22 @@ table {
 .mobile-main-nav a:last-child {
   border-bottom: 1px solid #55596d;
 }
+@media (min-width: 800px) {
+  .mobile-main-nav {
+    display: none;
+  }
+}
 @media (min-width: 1000px) {
   .mobile-main-nav {
     display: none;
   }
+}
+.home-footer {
+  text-align: center;
+  padding: 10px;
+}
+.home-footer span {
+  font-size: 0.8rem;
 }
 .container {
   font-size: 62.5%;
@@ -203,6 +219,11 @@ table {
   width: 50px;
   margin: 20px 10px 0 10px;
 }
+@media (min-width: 800px) {
+  .container .top-bar .hamburger-button {
+    display: none;
+  }
+}
 @media (min-width: 1000px) {
   .container .top-bar .hamburger-button {
     display: none;
@@ -217,6 +238,13 @@ table {
     margin-top: 0;
   }
 }
+@media (min-width: 800px) {
+  .container .top-bar {
+    padding: 0;
+    padding: 40px 60px;
+    border-bottom: 2px solid #55596d;
+  }
+}
 @media (min-width: 1000px) {
   .container .top-bar {
     padding: 0;
@@ -228,29 +256,60 @@ table {
 .container .home-main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
 }
 .container .home-main .main-content-section {
   padding: 50px;
+  margin: 10px 1%;
+  border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container .home-main .main-content-section h2 {
+.container .home-main .main-content-section .text-content {
+  display: flex;
+  flex-direction: column;
+}
+.container .home-main .main-content-section .text-content h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 10px 0;
 }
-.container .home-main .main-content-section p {
+.container .home-main .main-content-section .text-content p {
   font-size: 1.2rem;
+}
+.container .home-main .main-content-section .text-content .email-input {
+  display: flex;
+  flex-direction: row;
 }
 .container .home-main .main-content-section .get-help-img {
   width: 200px;
 }
 .container .home-main .main-content-section .keep-organized-img {
   width: 200px;
+}
+@media (min-width: 800px) {
+  .container .home-main .main-content-section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .container .home-main .main-content-section {
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .container .home-main .reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  .container .home-main .reverse {
+    flex-direction: column;
+  }
 }
 .container .home-main .primary {
   background: #bb1333;
@@ -276,6 +335,6 @@ table {
 }
 @media (min-width: 1000px) {
   .container .home-main .half-width {
-    width: 50%;
+    width: 48%;
   }
 }

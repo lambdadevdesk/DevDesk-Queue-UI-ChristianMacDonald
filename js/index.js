@@ -1,8 +1,17 @@
-const hamburger_button = document.querySelector(".hamburger-button");
-console.log(hamburger_button);
-const nav_links = document.querySelectorAll(".mobile-main-nav a");
-hamburger_button.addEventListener("click", event => {
-    nav_links.forEach(element => {
-        element.classList.toggle("hidden");
-    });
-});
+class HamburgerButton {
+    constructor(element) {
+        this.element = element;
+        this.nav_links = document.querySelectorAll(".mobile-main-nav a");
+        this.element.addEventListener("click", event => {
+            this.toggleHidden();
+        });
+    }
+
+    toggleHidden() {
+        this.nav_links.forEach(element => {
+            element.classList.toggle("hidden");
+        });
+    }
+}
+
+const hamburger_button = new HamburgerButton(document.querySelector(".hamburger-button"));
