@@ -338,3 +338,17 @@ table {
     width: 48%;
   }
 }
+.developer-table {
+  margin: 20px;
+  background: #55596d;
+  border-radius: 10px;
+}
+.developer-table th {
+  padding: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.developer-table td {
+  padding: 5px;
+  font-size: 1.6rem;
+}
