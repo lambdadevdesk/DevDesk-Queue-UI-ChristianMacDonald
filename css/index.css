@@ -290,6 +290,7 @@ table {
 .container .home-main .main-content-section .text-content .email-input {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .container .home-main .main-content-section .get-help-img {
   width: 200px;
