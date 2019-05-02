@@ -1,0 +1,373 @@
+.hidden {
+  display: none;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+.desktop-main-nav {
+  display: none;
+}
+.desktop-main-nav a {
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #55596d;
+  font-size: 1.6rem;
+}
+.desktop-main-nav a:hover {
+  color: #a3a7b8;
+}
+@media (min-width: 800px) {
+  .desktop-main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .desktop-main-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+.mobile-main-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.mobile-main-nav a {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #55596d;
+  text-decoration: none;
+  text-align: center;
+  color: #55596d;
+  font-size: 1.6rem;
+}
+.mobile-main-nav a:last-child {
+  border-bottom: 1px solid #55596d;
+}
+.mobile-main-nav a:hover {
+  background: #eeeeee;
+}
+@media (min-width: 800px) {
+  .mobile-main-nav {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .mobile-main-nav {
+    display: none;
+  }
+}
+.home-footer {
+  text-align: center;
+  padding: 10px;
+}
+.home-footer span {
+  font-size: 0.8rem;
+}
+.container {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+.container .top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .top-bar .hamburger-button {
+  width: 50px;
+  margin: 20px 10px 0 10px;
+}
+@media (min-width: 800px) {
+  .container .top-bar .hamburger-button {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .container .top-bar .hamburger-button {
+    display: none;
+  }
+}
+.container .top-bar .logo {
+  width: 200px;
+  margin-top: 30px;
+}
+@media (min-width: 1000px) {
+  .container .top-bar .logo {
+    margin-top: 0;
+  }
+}
+@media (min-width: 800px) {
+  .container .top-bar {
+    padding: 0;
+    padding: 40px 60px;
+    border-bottom: 2px solid #55596d;
+  }
+}
+@media (min-width: 1000px) {
+  .container .top-bar {
+    padding: 0;
+    justify-content: space-between;
+    padding: 40px 60px;
+    border-bottom: 2px solid #55596d;
+  }
+}
+.container .home-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .home-main .main-content-section {
+  padding: 50px;
+  margin: 10px 1%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .home-main .main-content-section .text-content {
+  display: flex;
+  flex-direction: column;
+}
+.container .home-main .main-content-section .text-content h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.container .home-main .main-content-section .text-content p {
+  font-size: 1.2rem;
+}
+.container .home-main .main-content-section .text-content .email-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .home-main .main-content-section .get-help-img {
+  width: 200px;
+  margin: 20px;
+}
+.container .home-main .main-content-section .keep-organized-img {
+  width: 200px;
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  .container .home-main .main-content-section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .container .home-main .main-content-section {
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .container .home-main .reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  .container .home-main .reverse {
+    flex-direction: column;
+  }
+}
+.container .home-main .primary {
+  background: #bb1333;
+  color: white;
+}
+.container .home-main .secondary {
+  background: #002070;
+  color: white;
+}
+.container .home-main .tertiary {
+  background: #1e50ee;
+  color: white;
+}
+.container .home-main .quarternary {
+  background: #08addd;
+  color: white;
+}
+.container .home-main .full-width {
+  width: 100%;
+}
+.container .home-main .half-width {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .container .home-main .half-width {
+    width: 48%;
+  }
+}
+.developer-table {
+  margin: 20px;
+  background: #55596d;
+  border-radius: 10px;
+}
+.developer-table th {
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  .developer-table th {
+    font-size: 1.6rem;
+  }
+}
+.developer-table td {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+  .developer-table td {
+    font-size: 1.2rem;
+  }
+}
