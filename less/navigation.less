@@ -8,6 +8,10 @@
         text-align: center;
         color: @lambda-gray;
         font-size: 1.6rem;
+
+        &:hover {
+            color: lighten(@lambda-gray, 30%);
+        }
     }
 
     @media @tablet {
@@ -47,6 +51,10 @@
 
         &:last-child {
             border-bottom: 1px solid @lambda-gray;
+        }
+
+        &:hover {
+            background: @mobile-nav-anchor-hover;
         }
     }
 
