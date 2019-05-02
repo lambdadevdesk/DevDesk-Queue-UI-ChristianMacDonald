@@ -354,10 +354,20 @@ table {
 }
 .developer-table th {
   padding: 5px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
+}
+@media (min-width: 800px) {
+  .developer-table th {
+    font-size: 1.6rem;
+  }
 }
 .developer-table td {
   padding: 5px;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+  .developer-table td {
+    font-size: 1.2rem;
+  }
 }
